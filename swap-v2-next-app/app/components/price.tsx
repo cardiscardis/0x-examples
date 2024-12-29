@@ -17,7 +17,11 @@ import {
   FEE_RECIPIENT,
 } from "../../src/constants";
 import { permit2Abi } from "../../src/utils/permit2abi";
-import ZeroExLogo from "../../src/images/white-0x-logo.png";
+// import ZeroExLogo from "../../src/images/white-0x-logo.png";
+import KarenLogo from "../../src/images/karenLogo.png";
+import KarenLogoFull from "../../src/images/karenLogoFull.png";
+// import BankBackground from "../../src/images/pexels-photo-10958528.jpeg"
+// import BankBackground2 from "../../src/images/China_Tower_blue_sky_Sept-2010.jpeg"
 import Image from "next/image";
 import qs from "qs";
 
@@ -156,25 +160,16 @@ export default function PriceView({
 
   return (
     <div>
-      <header
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
-        <a href="https://0x.org/" target="_blank" rel="noopener noreferrer">
-          <Image src={ZeroExLogo} alt="Icon" width={50} height={50} />
-        </a>
-        <ConnectButton />
-      </header>
-
       <div className="container mx-auto p-10">
-        <header className="text-center py-4">
-          <h1 className="text-3xl font-bold">0x Swap Demo</h1>
+        <header className="flex flex-row text-center py-4 gap-2 items-center">
+          <a href="/" target="_blank" rel="noopener noreferrer">
+            <Image src={KarenLogo} alt="Icon" width={50} height={50} style={{borderRadius: 20}} />
+          </a>
+          <h1 className="text-3xl text-white font-bold">KAREN DEFi BANK</h1>
         </header>
 
-        <p className="text-md text-center p-4 text-gray-500">
-          Check out the{" "}
+        <p className="text-md text-center p-4 text-white">
+          Buy and sell crypto coins from multiple network{/* {" "}
           <u className="underline">
             <a href="https://0x.org/docs/">0x Docs</a>
           </u>{" "}
@@ -184,11 +179,11 @@ export default function PriceView({
               Code
             </a>
           </u>{" "}
-          to build your own
+          to build your own */}
         </p>
 
         <div className="bg-slate-200 dark:bg-slate-800 p-4 rounded-md mb-3">
-          <label htmlFor="sell" className="text-gray-300 mb-2 mr-2">
+          <label htmlFor="sell" className="text-gray-600 mb-2 mr-2">
             Sell
           </label>
           <section className="mt-4 flex items-start justify-center">
@@ -235,7 +230,7 @@ export default function PriceView({
               }}
             />
           </section>
-          <label htmlFor="buy" className="text-gray-300 mb-2 mr-2">
+          <label htmlFor="buy" className="text-gray-600 mb-2 mr-2">
             Buy
           </label>
           <section className="flex mb-6 mt-4 items-start justify-center">

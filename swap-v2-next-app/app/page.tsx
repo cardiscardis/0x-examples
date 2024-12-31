@@ -21,7 +21,7 @@ function Page() {
   const [quote, setQuote] = useState();
 
   return (
-    <div className="bg-[url('/pexels-photo-10958528.jpeg')] bg-cover bg-center h-screen h-full">
+    <div className="bg-[url('/pexels-photo-10958528.jpeg')] bg-cover bg-center h-full w-full">
       <NavBar />
       <div
         className={`flex min-h-screen flex-col items-center justify-between p-24`}

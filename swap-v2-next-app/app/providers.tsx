@@ -16,8 +16,9 @@ import {
 import { mainnet } from "wagmi/chains";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { WagmiProvider, createConfig, http } from "wagmi";
+import {WALLET_CONNECT_PROJECT_ID} from '../config'
 
-const projectId = process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID as string;
+const projectId = WALLET_CONNECT_PROJECT_ID as string;
 coinbaseWallet.preference = "smartWalletOnly";
 
 const connectors = connectorsForWallets(

@@ -3,3 +3,5 @@
 export const WALLET_CONNECT_PROJECT_ID="acdd0fa1158aaff410bd1ab200b7e92b"
 
 export const WALLET_BASE_URL="https://karen-wallet.vercel.app"
+
+export const PAY_BASE_URL="https://karen-crypto-fiat-pay.vercel.app/"

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-import { PAY_BASE_URL, WALLET_BASE_URL } from "../../config";
+import { GAMES_BASE_URL, PAY_BASE_URL, WALLET_BASE_URL } from "../../config";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +39,7 @@ const NavBar = () => {
           <Link href={PAY_BASE_URL as string} className="hover:text-cyan-400">
             Fiat Payment
           </Link>
-          <Link href={"#"} className="hover:text-cyan-400">
+          <Link href={GAMES_BASE_URL as string} className="hover:text-cyan-400">
             Play-to-earn
           </Link>
           <div>
